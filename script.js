@@ -64,14 +64,14 @@ const counter = (clone_id) => {
       }
       })
 
-      ticket_no.sort((a, b) => {
+      ticket_no?.sort((a, b) => {
           return b - a;
       });
 
       current_no = ticket_no[0] + 1 || 1
 
       const todoItem = document.querySelector(clone_id? `[data-clone-id=${clone_id}]` : "todo_content");
-      if(todoItem) {
+      if(todoItem && !todoItem.value) {
         todoItem.value = `${ticket_suffix || "ISS"}-${current_no}: `
 
   }

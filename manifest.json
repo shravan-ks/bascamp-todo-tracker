@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Basecamp Todo Tracker",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Basecamp Todo Tracker",
     "short_name": "Basecamp Todo Tracker",
     "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
